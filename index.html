@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>elphadeal</title>
+</head>
+<body>
+    <h1 class="titlelogo">elphadealのホームページ</h1>
+    <style>
+    .sidebar {
+        position: fixed;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 290px;
+        background: rgba(208, 237, 255, 0.9);
+        color: #fff;
+        padding: 24px 16px;
+        box-sizing: border-box;
+        overflow-y: auto;
+        z-index: 1000;
+    }
+    .sidebar .logo { font-weight: 700; margin-bottom: 20px; font-size: 18px; }
+    .sidebar nav a { display: block; color: #000000; text-decoration: none; padding: 8px 0; border-radius: 10px; }
+    .sidebar nav a:hover { background: rgba(255,255,255,0.04); color: #000000; }
+
+    .main {
+        margin-left: 220px;
+        padding: 32px;
+        box-sizing: border-box;
+        min-height: 100vh;
+        background: transparent;
+    }
+
+    /* シンプルなレスポンシブ切替 */
+    @media (max-width: 600px) {
+        .sidebar { transform: translateX(-100%); transition: transform .2s ease; }
+        .sidebar.open { transform: translateX(0); }
+        .main { margin-left: 0; }
+    }
+    </style>
+
+    <aside class="sidebar" role="navigation" aria-label="サイドバー">
+        <div class="logo">elphadeal</div>
+        <nav>
+            <a href="https://github.com/villiogears">github</a>
+            <a href="https://github.com/villiogears">github</a>
+            <a href="https://github.com/villiogears">github</a>
+            <a href="https://github.com/villiogears">github</a>
+            <a href="https://github.com/villiogears">github</a>
+            <a href="https://github.com/villiogears">github</a>
+            <a href="https://github.com/villiogears">github</a>
+        </nav>
+    </aside>
+
+    <main class="main">
+        <p class="title1">elphadeal</p>
+        <img class="logo1" src="./favicon.svg" alt="elphadeal logo" width="200" height="200">
+        <p class="description">elphadeal</p>
+        <p class="description">生年月日 2009年02月12日</p>
+        <p class="description">血液型 知るか</p>
+    </main>
+</body>
+<style>
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.description {
+    font-family: 'Arial', sans-serif;
+    margin-left: 120px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+body {
+    background-image: url('./logo.svg');
+    background-repeat: repeat;
+    background-position: 0 0;
+    /* set tile size so they butt up without gaps; adjust values to match your SVG's intended size */
+    background-size: 200px 100px;
+    -webkit-background-size: 200px 100px;
+    background-attachment: fixed;
+}
+
+.logo1 {
+    display: block;
+    margin: 20;
+    margin-top: 20px;
+    margin-left: 80px;
+
+}
+
+.title1 {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 40px;
+}
+
+.titlelogo {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    margin-right: -150px;
+}
+</style>
+</html>
